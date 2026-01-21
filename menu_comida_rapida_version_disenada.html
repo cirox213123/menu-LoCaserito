@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Lo Caserito de Sonia y Victor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: #E6D7C3;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #b71c1c, #f57c00);
+            color: #fff;
+            position: relative;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        /* Escudo decorativo */
+        header::after {
+            content: "";
+            width: 90px;
+            height: 60px;
+            background-color: #d32f2f;
+            clip-path: polygon(10% 0%, 90% 0%, 100% 40%, 50% 100%, 0% 40%);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -30px;
+        }
+        /* Llamas */
+        .flame {
+            position: absolute;
+            top: 20px;
+            font-size: 40px;
+        }
+        .flame.left { left: 20px; }
+        .flame.right { right: 20px; }
+
+        .container {
+            padding: 60px 20px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .description, .phone {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .menu-section {
+            margin-bottom: 35px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .menu-section h2 {
+            color: #d32f2f;
+            margin-top: 0;
+            border-bottom: 2px solid #f57c00;
+            padding-bottom: 6px;
+        }
+        .menu-item {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        .note {
+            font-style: italic;
+            color: #666;
+        }
+        /* Diseño especial bebidas */
+        .bebidas {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border: 2px dashed #f57c00;
+        }
+        .bebidas h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .bebidas h2::before {
+            content: "🥤";
+            font-size: 28px;
+        }
+        .bebida-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 8px 0;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: inset 0 0 0 2px #ffcc80;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="flame left">🔥</span>
+        <h1>Lo Caserito de Sonia y Victor</h1>
+        <span class="flame right">🔥</span>
+    </header>
+
+    <div class="container">
+        <p class="description">Cocinamos de Miércoles a Domingo · Mediodía y Noche</p>
+        <p class="phone">📞 Teléfono: 3464 634423</p>
+
+        <div class="menu-section">
+            <h2>PIZZANESAS</h2>
+            <div class="menu-item">Pizzanesa chica $16 MIL · c/ huevos fritos $18 MIL</div>
+            <div class="menu-item">Pizzanesa mediana $25 MIL · c/ huevos fritos $27 MIL</div>
+            <div class="menu-item">Pizzanesa grande $35 MIL · c/ huevos fritos $37 MIL</div>
+            <p class="note">Todas incluyen papas fritas</p>
+        </div>
+
+        <div class="menu-section">
+            <h2>SANDWICHERÍA</h2>
+            <div class="menu-item">Super mila grande $18 MIL</div>
+            <div class="menu-item">Super mila chica $14 MIL</div>
+            <div class="menu-item">Super lomo grande $20 MIL</div>
+            <div class="menu-item">Super lomo chico $16 MIL</div>
+            <div class="menu-item">Hamburguesas $16 MIL</div>
+            <p class="note">Todas incluyen papas fritas</p>
+        </div>
+
+        <div class="menu-section">
+            <h2>SUPER POLLOS</h2>
+            <div class="menu-item">Super pollo c/ fritas $28 MIL</div>
+            <div class="menu-item">Super pollo s/ fritas $22 MIL</div>
+            <div class="menu-item">Medio pollo c/ fritas $15 MIL</div>
+            <div class="menu-item">Medio pollo s/ fritas $12 MIL</div>
+            <div class="menu-item">Pata muslo c/ fritas $10 MIL</div>
+            <div class="menu-item">Pata muslo s/ fritas $7 MIL</div>
+        </div>
+
+        <div class="menu-section">
+            <h2>CARLITOS Y TOSTADOS</h2>
+            <div class="menu-item">Carlitos c/ fritas $15 MIL</div>
+            <div class="menu-item">Carlitos s/ fritas $12 MIL</div>
+            <div class="menu-item">Tostados c/ fritas $15 MIL</div>
+            <div class="menu-item">Tostados s/ fritas $12 MIL</div>
+        </div>
+
+        <div class="menu-section">
+            <h2>MILANESAS AL PLATO</h2>
+            <div class="menu-item">Milanesa a caballo $13 MIL</div>
+            <div class="menu-item">Milanesa sola $10 MIL</div>
+        </div>
+
+        <div class="menu-section">
+            <h2>PROMOCIONES</h2>
+            <div class="menu-item">2 Super Mila $30 MIL</div>
+            <div class="menu-item">2 Super Lomo $32 MIL</div>
+            <div class="menu-item">2 Super 1 y 1 $34 MIL</div>
+            <div class="menu-item">2 Milas a caballo $20 MIL</div>
+            <div class="menu-item">2 Tostados $22 MIL</div>
+            <div class="menu-item">2 Hamburguesas XXL $22 MIL</div>
+        </div>
+
+        <div class="menu-section bebidas">
+            <h2>BEBIDAS</h2>
+            <div class="bebida-item"><span>Gaseosa 1,5 L</span><span>$4500</span></div>
+            <div class="bebida-item"><span>Agua saborizada 1,5 L</span><span>$2500</span></div>
+            <div class="bebida-item"><span>Cerveza en lata</span><span>$3500</span></div>
+        </div>
+
+        <div class="menu-section">
+            <h2>EMPANADAS Y TARTAS</h2>
+            <div class="menu-item">Tarta de verdura $16 MIL</div>
+            <div class="menu-item">Tarta de JyQ $16 MIL</div>
+            <div class="menu-item">Tarta de pollo $16 MIL</div>
+            <div class="menu-item">Empanadas de JyQ $20 MIL</div>
+            <div class="menu-item">Empanadas de pollo $20 MIL</div>
+            <div class="menu-item">Empanadas de carne $20 MIL</div>
+            <div class="menu-item">Empanada por unidad $2 MIL</div>
+        </div>
+    </div>
+</body>
+</html>
